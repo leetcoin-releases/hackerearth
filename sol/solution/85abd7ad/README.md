@@ -22,57 +22,13 @@ Complete the function solve() provided in the editor. This function takes the fo
 ### **Output format**
 For each test case, print the number of operations required to convert array B into array A by applying the given operation or -1 if it is impossible to do so.
 
-**Constraints**<br>
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mn>1</mn>
-  <mo>&#x2264;</mo>
-  <mi>T</mi>
-  <mo>&#x2264;</mo>
-  <msup>
-    <mn>10</mn>
-    <mn>4</mn>
-  </msup>
-</math><br>
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mn>2</mn>
-  <mo>&#x2264;</mo>
-  <mi>N</mi>
-  <mo>&#x2264;</mo>
-  <msup>
-    <mn>10</mn>
-    <mn>5</mn>
-  </msup>
-</math><br>
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mn>0</mn>
-  <mo>&#x2264;</mo>
-  <msub>
-    <mi>A</mi>
-    <mi>i</mi>
-  </msub>
-  <mo>&#x2264;</mo>
-  <msup>
-    <mn>10</mn>
-    <mrow data-mjx-texclass="ORD">
-      <mn>9</mn>
-    </mrow>
-  </msup>
-</math><br>
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mrow>
-    <mtext>Sum of&#xA0;</mtext>
-    <mrow data-mjx-texclass="ORD">
-      <mi>N</mi>
-    </mrow>
-    <mtext>&#xA0;over all test cases does not exceed&#xA0;</mtext>
-  </mrow>
-  <mn>2</mn>
-  <mo>&#x22C5;</mo>
-  <msup>
-    <mn>10</mn>
-    <mn>5</mn>
-  </msup>
-</math>
+**Constraints**
+```md
+1 ≤ T ≤ 10⁴
+2 ≤ N ≤ 10⁵
+0 ≤ Aᵢ ≤ 10⁹
+Sum of N over all test cases does not exceed≤ 2·10⁵
+```
 
 #### **Sample Input**
 ```md
@@ -98,8 +54,7 @@ The first line denotes T = 2.
 
 **Given**
 - N = 3
-- A = [3, 1, 0]
-<br>
+- A = [3, 1, 0]<br>
 
 **Approach**
 - It is impossible to convert B = [0, 0, 0] into A = [3, 1, 0] using the given operation. Thus, the answer is -1.
@@ -108,8 +63,7 @@ The first line denotes T = 2.
 
 **Given**
 - N = 2
-- A = [0, 2]
-<br>
+- A = [0, 2]<br>
 
 **Approach**
 - Initially, B = [0, 0].
